@@ -1,5 +1,0 @@
-C:\Users\Rafael\Documents\GitHub\LearningASP.NET\RBBudget1\MonthlyExpenses\obj\Debug\MonthlyExpenses.csprojResolveAssemblyReference.cache
-C:\Users\Rafael\Documents\GitHub\LearningASP.NET\RBBudget1\MonthlyExpenses\bin\Debug\MonthlyExpenses.dll
-C:\Users\Rafael\Documents\GitHub\LearningASP.NET\RBBudget1\MonthlyExpenses\bin\Debug\MonthlyExpenses.pdb
-C:\Users\Rafael\Documents\GitHub\LearningASP.NET\RBBudget1\MonthlyExpenses\obj\Debug\MonthlyExpenses.dll
-C:\Users\Rafael\Documents\GitHub\LearningASP.NET\RBBudget1\MonthlyExpenses\obj\Debug\MonthlyExpenses.pdb
