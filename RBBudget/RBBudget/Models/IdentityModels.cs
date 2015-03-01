@@ -14,6 +14,8 @@ namespace RBBudget.Models
             // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType
             var userIdentity = await manager.CreateIdentityAsync(this, DefaultAuthenticationTypes.ApplicationCookie);
             // Add custom user claims here
+            // Add propertis that you can display when registering: update login or Manger pages. 
+            // Manager pages is to allow the user to udate or change the property. 
             return userIdentity;
         }
     }

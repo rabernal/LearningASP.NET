@@ -17,6 +17,7 @@ namespace RBBudget.Controllers
 
         public ActionResult AutocompliteSearch(string term)
         {
+
             var model =
                 db.Users
                 .Where(r => r.Fname.StartsWith(term))
