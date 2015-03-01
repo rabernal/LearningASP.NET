@@ -1,0 +1,21 @@
+﻿@model IEnumerable<RBBudget.Models.User>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<form method="get" action="@Url.Action("Index")"
+     data-ajax="true" data-target="#userList" >
+
+    <input type="search" name="searchEngine" data-autocomplete="@Url.Action("AutocompliteSearch")" />
+    <input type="submit" value="Search" />
+</form>
+
+@Html.Partial("_UserListPartial", Model)
+
+
