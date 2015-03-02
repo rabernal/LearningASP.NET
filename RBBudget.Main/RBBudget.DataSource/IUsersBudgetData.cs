@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace RBBudget.DataSource
 {
-    class IUsersBudgetData
+    public interface IUsersBudgetData
     {
+        IQueryable<UserBudget> UsersBudget { get; }
     }
 }

@@ -1,0 +1,5 @@
+C:\Users\Rafael\Documents\GitHub\LearningASP.NET\RBBudget.Main\RBBudget.DataSource\obj\Debug\RBBudget.DataSource.csprojResolveAssemblyReference.cache
+C:\Users\Rafael\Documents\GitHub\LearningASP.NET\RBBudget.Main\RBBudget.DataSource\bin\Debug\RBBudget.DataSource.dll
+C:\Users\Rafael\Documents\GitHub\LearningASP.NET\RBBudget.Main\RBBudget.DataSource\bin\Debug\RBBudget.DataSource.pdb
+C:\Users\Rafael\Documents\GitHub\LearningASP.NET\RBBudget.Main\RBBudget.DataSource\obj\Debug\RBBudget.DataSource.dll
+C:\Users\Rafael\Documents\GitHub\LearningASP.NET\RBBudget.Main\RBBudget.DataSource\obj\Debug\RBBudget.DataSource.pdb
