@@ -12,8 +12,8 @@
 <form method="get" action="@Url.Action("Index")"
       data-ajax="true" data-target="#displayUsers">
 
-    <input type="search" name="searchEngine" data-autocomplete="@Url.Action("AutoSearch")" />
+    <input type="search" name="searchResuletTerm" data-autocomplete="@Url.Action("AutoSearch")" />
     <input type="submit" value="Search" />
 </form>
 
-@Html.Partial("_displayUsersPartial", Model);
+@Html.Partial("_displayUsersPartial", Model)
