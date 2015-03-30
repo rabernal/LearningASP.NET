@@ -1,0 +1,102 @@
+﻿body {
+}
+
+#myMainGrid {
+    display: -ms-grid;
+    -ms-grid-columns: auto 35% 35% 35%;
+    -ms-grid-rows: 15% 30% 30% 15% auto;
+    width: 90%;
+    height: 95%;
+    margin: auto;
+}
+
+    #myMainGrid > header:nth-child(1) {
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+        -ms-grid-row: 1;
+        border: 1px dotted red;
+        margin: 5px;
+    }
+
+    #myMainGrid > aside:nth-child(2) {
+        -ms-grid-column: 1;
+        -ms-grid-row-span: 2;
+        -ms-grid-row: 2;
+        margin: 5px;
+    }
+
+    #myMainGrid > article:nth-child(3) {
+        -ms-grid-column: 2;
+        -ms-grid-row-span: 2;
+        -ms-grid-row: 2;
+        margin: 5px;
+    }
+
+    #myMainGrid > article:nth-child(4) {
+        -ms-grid-column: 3;
+        -ms-grid-row-span: 2;
+        -ms-grid-row: 2;
+        margin: 5px;
+    }
+
+    #myMainGrid > footer:nth-child(5) {
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+        -ms-grid-row: 4;
+        border: 1px dotted red;
+        margin: 5px;
+    }
+    nav{
+        background-color: rgb(241, 138, 138);
+
+    }
+    nav a:hover{
+        background-color: yellow;
+    }
+
+article {
+    background-color: rgb(0, 255, 255);
+    transition: all 1s;
+    box-shadow: 10px 10px 2px rgb(241, 138, 138);
+    border: 1px solid rgb(241,138,138);
+}
+
+.myArt {
+}
+
+article:hover {
+    -ms-transform: scale(1.03);
+}
+
+aside {
+    background-color: rgb(241, 138, 138);
+     border: 1px solid rgb(241,138,138);
+}
+
+    aside:hover {
+        position: relative;
+        transition: all 2s;
+        -ms-transform: scale(1.03);
+        animation-name: example;
+        animation-duration: 1s;
+        text-shadow: 10px 10px 10px #ffd800;
+    }
+
+
+/*@keyframes example {
+    0%   {background-color:red; left:0px; top:0px;
+          transform: rotateX(150deg);
+    }
+    25%  {background-color:yellow; left:200px; top:0px;
+          transform:scale(2);
+    }
+    50%  {background-color:blue; left:200px; top:200px;
+          transform:scale(1);
+    }
+    75%  {background-color:green; left:0px; top:200px;
+          
+    }
+    100% {background-color:red; left:0px; top:0px;
+          
+    }*/
+}
