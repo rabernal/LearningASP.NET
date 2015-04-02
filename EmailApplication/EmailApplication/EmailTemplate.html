@@ -2,36 +2,109 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title></title>
-
+    <link href="Content/css/Styles.css" rel="stylesheet" />
+    <script id="myScript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    
     <style>
-        #header {
-            background-color: black;
-            color: white;
-            text-align: center;
-            padding: 5px;
+        body {
         }
 
-        #nav {
-            line-height: 30px;
-            background-color: #eeeeee;
-            height: 300px;
-            width: 100px;
-            float: left;
-            padding: 5px;
+        @media screen and (min-width: 1200px) {
+            #header {
+                background-color: black;
+                color: white;
+                text-align: center;
+                padding: 5px;
+            }
+
+            #nav {
+                line-height: 30px;
+                background-color: #eeeeee;
+                height: 300px;
+                width: 100px;
+                float: left;
+                padding: 5px;
+            }
+
+            article {
+                width: 350px;
+                float: left;
+                padding: 10px;
+            }
+
+            #footer {
+                background-color: black;
+                color: white;
+                clear: both;
+                text-align: center;
+                padding: 5px;
+            }
+
+            canvas {
+                border: 1px solid black;
+            }
         }
 
-        #section {
-            width: 350px;
-            float: left;
-            padding: 10px;
-        }
+        @media screen and (min-width: 200px) and (max-width: 480px) {
 
-        #footer {
-            background-color: black;
-            color: white;
-            clear: both;
-            text-align: center;
-            padding: 5px;
+            #header {
+                background-color: blue;
+                color: white;
+                text-align: center;
+                padding: 5px;
+            }
+
+            #nav {
+                line-height: 30px;
+                background-color: #eeeeee;
+                height: 300px;
+                width: 50px;
+                float: left;
+                padding: 5px;
+                transition: all 2s;
+            }
+
+                #nav:hover {
+                    transform: scale(1.1);
+                }
+
+            #articleID {
+                background-color: rgb(255, 0, 110);
+                height: 50px;
+                max-width: inherit 480px;
+                position: relative;
+                /*border: solid 2px yellow;*/
+                margin: -20px 0px -10px 0px;
+                
+                text-align: center;
+                padding-bottom: 10px;
+                transition: all 2s;
+            }
+
+                #articleID:hover {
+                    /*transform:rotateZ(360deg);*/
+                    transform: scale(-1) translate(0px,-100px) rotateZ(360deg);
+                }
+
+            article {
+                /*border: 2px solid yellow;*/
+                width: 70%;
+                float: left;
+                padding: 5px;
+            }
+
+            #footer {
+                background-color: blue;
+                color: white;
+                clear: both;
+                text-align: center;
+                padding: 5px;
+            }
+
+            canvas {
+                border: 1px solid black;
+                background-color: rgb(0, 255, 255);
+            }
         }
     </style>
 
@@ -48,19 +121,47 @@
             <a href="#">Paris</a><br />
             <a href="#">Tokyo</a><br />
         </nav>
-        
-        <section id="section">
-            <h1>London</h1>
-            <p>
-                I am testing to see how this email will show in different formats.
-                London is the capital city of England. It is the most populous city in the United Kingdom,
-                with a metropolitan area of over 13 million inhabitants.
-            </p>
-            <p>
-                Standing on the River Thames, London has been a major settlement for two millennia,
-                its history going back to its founding by the Romans, who named it Londinium.
-            </p>
+
+        <article>
+            <header>
+                <hgroup id="articleID">
+                    <h1>London</h1>
+                </hgroup>
+            </header>
+            <section>
+                <p>
+                    I am testing to see how this email will show in different formats.
+                    London is the capital city of England. It is the most populous city in the United Kingdom,
+                    with a metropolitan area of over 13 million inhabitants.
+                </p>
+                <p>
+                    a
+                    Standing on the River Thames, London has been a major settlement for two millennia,
+                    its history going back to its founding by the Romans, who named it Londinium.
+                </p>
+            </section>
+        </article>
+        <section>
+            <header>
+                <hgroup>
+                    <h1>Canvas</h1>
+                </hgroup>
+                <canvas id="canvas" width="360" height="300"></canvas>
+            </header>
         </section>
+
+        <div id="geoResults">
+            <p>Current Location is</p>
+        </div>
+
+        <div id="map">
+            <p id="error"></p>
+        </div>
+
+        <input id="myRange" type="range" min="0" max="100" value="0"/>
+        <div id="outputing">here</div>
+
+        <input type="url" title="You must enter a correct URI" placeholder="www.url.com"/>
 
         <footer id="footer">
             Copyright © RafaelTechnologies
@@ -69,5 +170,6 @@
 
     </form>
 
+    <script src="Scripts/Js/myJS.js"></script>
 </body>
 </html>
